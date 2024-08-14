@@ -9,5 +9,3 @@ Recent Posts
     :hidden:
 
     Posts <posts.rst>
-
-
