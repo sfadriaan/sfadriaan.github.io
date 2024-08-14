@@ -17,29 +17,29 @@
 # -- Sphinx configuration ---------------------------------------------------
 
 # General information about the project.
-project = "Ruby Hammerhead"
-copyright = "2021, errbufferoverfl"
-author = "errbufferoverfl"
+project = "Salesforce Adriaan"
+copyright = "2024, Adriaan van Niekerk"
+author = "sfadriaan"
 
 # The full version, including alpha/beta/rc tags
-release = '1.1.0'
+release = ''
 
-html_baseurl = "https://errbufferoverfl.github.io/"
-html_title = "Ruby Hammerhead"
-timezone = "Melbourne/Australia"
+html_baseurl = "https://sfadriaan.github.io/"
+html_title = "Salesforce Adriaan"
+timezone = ""
 
 # -- Ablog configuration ---------------------------------------------------
 ablog_builder = "dirhtml"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = "https://errbufferoverfl.github.io/"
+blog_baseurl = "https://sfadriaan.github.io/"
 
 # A path relative to the configuration directory for posts archive pages.
 blog_path = "posts"
 
 # The "title" for the posts, used in active pages.  Default is ``'Blog'``.
-blog_title = "Ruby Hammerhead"
+blog_title = "Salesforce Adriaan"
 
 # The path that you store your content in, this will be used for the browsing path
 # on your published website
@@ -87,7 +87,6 @@ fontawesome_included = True
 # ones.
 extensions = [
     "ablog",
-    "myst_parser",
     "sphinx.ext.intersphinx",
     "sphinx_design",
     "sphinx_copybutton",
@@ -100,7 +99,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["README.md", "Pipfile", "Pipfile.lock", "Makefile", "make.bat", "logo.gif", "conf.py"]
+exclude_patterns = ["README.md", "Pipfile", "Pipfile.lock", "Makefile", "make.bat", "logo.gif", "conf.py",".venv"]
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -117,12 +116,11 @@ html_static_path = ['_static']
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "github_url": "https://github.com/errbufferoverfl/",
-    "twitter_url": "https://twitter.com/errbufferoverfl",
+    "github_url": "https://github.com/sfadriaan/",
+    "twitter_url": "https://twitter.com/sfadriaan",
     "search_bar_text": "Search...",
     "show_prev_next": False,
-    "navbar_center": [],
-    "footer_items": ["copyright", "sphinx-version", "last-updated"],
+    "navbar_center": []
 }
 
 # HTML Sidebar configuration -- options available depend on ablog & the Sphinx theme you use.
@@ -137,9 +135,9 @@ html_theme_options = {
 
 html_sidebars = {
     "*": ["search-field.html", "sidebar-nav.html"],
-    "posts": ["search-field.html", "sidebar-nav.html", "recentposts.html", "archives.html"],
-    "posts/**": ["search-field.html", "sidebar-nav.html", "postcard.html"],
-    "kitchen-sink/**": ["search-field.html", "sidebar-nav.html", "postcard.html"],
+    "posts": ["search-field.html", "sidebar-nav.html", "ablog/recentposts.html", "ablog/archives.html"],
+    "posts/**": ["search-field.html", "sidebar-nav.html", "ablog/postcard.html"],
+    "kitchen-sink/**": ["search-field.html", "sidebar-nav.html", "ablog/postcard.html"],
 }
 
 # The name of an image file (within the static path) to use as favicon of the
@@ -187,8 +185,8 @@ html_search_language = 'en'
 html_show_sourcelink = True
 
 # -- Opengraph configuration ---------------------------------------------------
-ogp_site_url = "https://errbufferoverfl.github.io/"
-ogp_image = "https://errbufferoverfl.github.io/_static/opengraph.png"
+ogp_site_url = "https://sfadriaan.github.io/"
+ogp_image = "https://sfadriaan.github.io/_static/opengraph.png"
 ogp_use_first_image = True
 ogp_image_alt = ""
 ogp_description_length = 200
