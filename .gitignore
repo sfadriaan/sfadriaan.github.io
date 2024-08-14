@@ -3,3 +3,4 @@
 _website
 .doctrees
 .venv
+__pycache__
