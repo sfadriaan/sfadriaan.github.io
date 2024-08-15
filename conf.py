@@ -99,7 +99,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["README.md", "Pipfile", "Pipfile.lock", "Makefile", "make.bat", "logo.gif", "conf.py",".venv"]
+exclude_patterns = ["README.md", "Makefile", "make.bat", "logo.gif", "conf.py",".venv"]
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -136,14 +136,13 @@ html_theme_options = {
 html_sidebars = {
     "*": ["search-field.html", "sidebar-nav.html"],
     "posts": ["search-field.html", "sidebar-nav.html", "ablog/recentposts.html", "ablog/archives.html"],
-    "posts/**": ["search-field.html", "sidebar-nav.html", "ablog/postcard.html"],
-    "kitchen-sink/**": ["search-field.html", "sidebar-nav.html", "ablog/postcard.html"],
+    "posts/**": ["search-field.html", "sidebar-nav.html", "ablog/postcard.html"]
 }
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = "favicon.ico"
+html_favicon = ""
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = True
