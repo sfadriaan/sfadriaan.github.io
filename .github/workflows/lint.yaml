@@ -20,3 +20,4 @@ jobs:
             version: 3.7.0
             files: '["how-to", "tutorials", "reference", "explanation"]'
             fail_on_error: true
+            reporter: github-pr-check
