@@ -21,3 +21,4 @@ jobs:
             files: '["how-to", "tutorials", "reference", "explanation"]'
             fail_on_error: true
             reporter: github-pr-review
+            filter_mode: nofilter
