@@ -10,7 +10,7 @@ Depending on your situation you:
 
 There are multiple options where you can sign up for a free trial org that has Omnistudio installed:
 
-1. `Financial Services Cloud <https://developer.salesforce.com/free-trials/comparison/financial-services-cloud>`_ (*recommended*)
+1. `Financial Services Cloud <https://developer.salesforce.com/free-trials/comparison/financial-services-cloud>`_ *recommended*
     * Always have an up to date Omnistudio installed at the time of sign up.
     * Two options are available
         * Base org
