@@ -1,7 +1,7 @@
 OmniStudio
 ==========
 
-Getting Started
+Getting started
 ---------------
 
 Get your development environment set up with the latest version of OmniStudio.

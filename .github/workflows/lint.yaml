@@ -1,0 +1,24 @@
+name: lint
+
+on: 
+  pull_request:
+
+jobs:
+  vale:
+    name: Style checker
+    runs-on: ubuntu-22.04
+    defaults:
+        run:
+            shell: bash
+            working-directory: .
+    steps:
+        - name: Checkout repo to runner
+          uses: actions/checkout@v4
+        - name: Run Vale tests
+          uses: errata-ai/vale-action@reviewdog
+          with:
+            version: 3.7.0
+            files: '["how-to", "tutorials", "reference", "explanation"]'
+            fail_on_error: true
+            reporter: github-pr-review
+            filter_mode: nofilter
