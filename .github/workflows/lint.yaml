@@ -17,6 +17,6 @@ jobs:
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:
-            version: 3.7
+            version: 3.7.0
             files: '["how-to", "tutorial", "reference", "explanation"]'
             fail_on_error: true
