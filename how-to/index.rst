@@ -1,9 +1,9 @@
 :hide-toc:
 
-How-To Guides
+How-to guides
 =============
 
-The How-To section is broken up into different subsections to help you better navigate to where you want to be.
+The How-To section consists of different subsections to help you better navigate to where you want to be.
 
 .. toctree::
    :maxdepth: 1
