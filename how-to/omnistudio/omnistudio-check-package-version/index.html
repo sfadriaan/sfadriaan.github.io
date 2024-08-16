@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Check OmniStudio Package Version" />
+<meta property="og:title" content="Check OmniStudio package version" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sfadriaan.github.io/how-to/omnistudio/omnistudio-check-package-version/" />
 <meta property="og:site_name" content="Salesforce Adriaan" />
-<meta property="og:description" content="Updates to the OmniStudio Managed Package are released with the Salesforce release cycle i.e. Spring, Summer, and Winter. If OmniStudio is installed in your production environment, updates should h..." />
+<meta property="og:description" content="Salesforce releases updates to the OmniStudio Managed Package during every release cycle i.e. Spring, Summer, and Winter. Updates to the Omnistudio Managed Package should happen automatically in yo..." />
 <meta property="og:image" content="https://sfadriaan.github.io/_images/omnistudio-outdated-package-version.png" />
 <meta property="og:image:alt" content="Salesforce Adriaan" />
-<meta name="description" content="Updates to the OmniStudio Managed Package are released with the Salesforce release cycle i.e. Spring, Summer, and Winter. If OmniStudio is installed in your production environment, updates should h..." />
+<meta name="description" content="Salesforce releases updates to the OmniStudio Managed Package during every release cycle i.e. Spring, Summer, and Winter. Updates to the Omnistudio Managed Package should happen automatically in yo..." />
 
-    <title>Check OmniStudio Package Version &#8212; Salesforce Adriaan</title>
+    <title>Check OmniStudio package version &#8212; Salesforce Adriaan</title>
   
   
   
@@ -58,10 +58,10 @@
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" />
     <link rel="next" title="Reference" href="../../../reference/" />
-    <link rel="prev" title="Getting an OmniStudio Enabled Org" href="../omnistudio-get-dev-org/" /> 
+    <link rel="prev" title="Getting an OmniStudio enabled org" href="../omnistudio-get-dev-org/" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Aug 15, 2024"/> 
+    <meta name="docbuild:last-update" content="Aug 16, 2024"/> 
 <link
   rel="alternate"
   type="application/atom+xml"
@@ -304,9 +304,9 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../omnistudio-index/">OmniStudio</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../omnistudio-getting-started/">Getting Started</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="../omnistudio-get-dev-org/">Getting an OmniStudio Enabled Org</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Check OmniStudio Package Version</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../omnistudio-getting-started/">Getting started</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../omnistudio-get-dev-org/">Getting an OmniStudio enabled org</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Check OmniStudio package version</a></li>
 </ul>
 </details></li>
 </ul>
@@ -351,13 +351,13 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../" class="nav-link">How-To Guides</a></li>
+    <li class="breadcrumb-item"><a href="../../" class="nav-link">How-to guides</a></li>
     
     
     <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
     
     
-    <li class="breadcrumb-item"><a href="../omnistudio-getting-started/" class="nav-link">Getting Started</a></li>
+    <li class="breadcrumb-item"><a href="../omnistudio-getting-started/" class="nav-link">Getting started</a></li>
     
     <li class="breadcrumb-item active" aria-current="page">Check...</li>
   </ul>
@@ -376,14 +376,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                    <section id="check-omnistudio-package-version">
-<h1>Check OmniStudio Package Version<a class="headerlink" href="#check-omnistudio-package-version" title="Link to this heading">#</a></h1>
-<p>Updates to the OmniStudio Managed Package are released with the Salesforce release cycle i.e. Spring, Summer, and Winter.
-If OmniStudio is installed in your production environment, updates should happen automatically.</p>
-<p>In the event that you have a trail org that has an outdated version (or your production org has not updated automatically), you can manually update the managed package.</p>
+<h1>Check OmniStudio package version<a class="headerlink" href="#check-omnistudio-package-version" title="Link to this heading">#</a></h1>
+<p>Salesforce releases updates to the OmniStudio Managed Package during every release cycle i.e. Spring, Summer, and Winter.
+Updates to the Omnistudio Managed Package should happen automatically in your production org.</p>
+<p>In the event that you have a trail org that has an outdated version, or your production org hasn’t updated automatically, you can manually update the managed package.</p>
 <ol class="arabic">
 <li><p>Check latest version by visiting the <a class="reference external" href="https://help.salesforce.com/s/articleView?id=000394906&amp;type=1">OmniStudio Release page</a></p></li>
 <li><dl>
-<dt>Check which version is installed in your org (production org or trail org)</dt><dd><ol class="loweralpha simple">
+<dt>Check which version is in your org:</dt><dd><ol class="loweralpha simple">
 <li><p>Navigate to Setup</p></li>
 <li><p>Search <code class="docutils literal notranslate"><span class="pre">Installed</span> <span class="pre">Packages</span></code></p></li>
 <li><p>Search for Package Name <code class="docutils literal notranslate"><span class="pre">Omnistudio</span></code></p></li>
@@ -393,7 +393,7 @@ If OmniStudio is installed in your production environment, updates should happen
 <img alt="../../../_images/omnistudio-outdated-package-version.png" src="../../../_images/omnistudio-outdated-package-version.png" />
 </figure>
 <ol class="loweralpha simple" start="5">
-<li><p>If the version is outdated, follow the instructions in the <a class="reference external" href="https://help.salesforce.com/s/articleView?id=000394906&amp;type=1">OmniStudio Release page</a> to install the latest version.</p></li>
+<li><p>For outdated versions, follow the instructions in the <a class="reference external" href="https://help.salesforce.com/s/articleView?id=000394906&amp;type=1">OmniStudio Release page</a> to install the latest version.</p></li>
 <li><p>After the updates/installation has completed, verify that the Installed Package version is correct.</p></li>
 </ol>
 <figure class="align-default">
