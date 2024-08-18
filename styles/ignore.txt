@@ -1,4 +1,6 @@
+datatable
+flexcard
 omnistudio
-vlocity
 org
 orgs
+vlocity
