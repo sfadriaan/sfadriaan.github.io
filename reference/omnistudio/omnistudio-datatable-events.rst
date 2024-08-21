@@ -50,7 +50,18 @@ Some considerations that you need to take into account when using this event:
 When clicking on a datatable row, the ``rowclick`` event fires.
 The ``rowclick`` event contains the information of the record of the row on which the user clicked.
 
+.. figure:: /images/omnistudio-datatable-rowclick-event.gif
 
+Some observations:
+
+* The ``{action.result.FIELD_NAME`` contains the latest clicked on row's information.
+* You don't need to click a cell's information, it can be anywhere on the row.
+* When you do cell level edits or row level edits, the click to edit fires the event.
 
 ``delete`` event
 ''''''''''''''''
+
+When deleting a row, the ``delete`` event fires.
+Make sure to enable the ``Row Delete`` attribute of the datatable component to ensure the user has the option to delete a row in the datatable.
+
+.. figure:: /images/omnistudio-datatable-delete-event.gif
