@@ -7,16 +7,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Getting an OmniStudio enabled org" />
+<meta property="og:title" content="Datable events" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sfadriaan.github.io/how-to/omnistudio/omnistudio-get-dev-org/" />
+<meta property="og:url" content="https://sfadriaan.github.io/reference/omnistudio/omnistudio-datatable-events/" />
 <meta property="og:site_name" content="Salesforce Adriaan" />
-<meta property="og:description" content="It’s important to ensure you have an up to date Omnistudio environment to develop in. Depending on your situation you: have access to a sandbox that’s created from a production org that has Omnistu..." />
-<meta property="og:image" content="https://sfadriaan.github.io/_static/opengraph.png" />
-<meta property="og:image:alt" content="" />
-<meta name="description" content="It’s important to ensure you have an up to date Omnistudio environment to develop in. Depending on your situation you: have access to a sandbox that’s created from a production org that has Omnistu..." />
+<meta property="og:description" content="Short description: What platform events are available when using the datatable component in a flexcard. Salesforce help files mentions datatable events: update, selectrow, rowclick, delete. as avai..." />
+<meta property="og:image" content="https://sfadriaan.github.io/_images/omnistudio-datatable-event-examples.gif" />
+<meta property="og:image:alt" content="Salesforce Adriaan" />
+<meta name="description" content="Short description: What platform events are available when using the datatable component in a flexcard. Salesforce help files mentions datatable events: update, selectrow, rowclick, delete. as avai..." />
 
-    <title>Getting an OmniStudio enabled org &#8212; Salesforce Adriaan</title>
+    <title>Datable events &#8212; Salesforce Adriaan</title>
   
   
   
@@ -52,13 +52,13 @@
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/omnistudio/omnistudio-get-dev-org';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/omnistudio/omnistudio-datatable-events';</script>
     <script src="../../../_static/js/rubyhammerhead.js?v=c337c661"></script>
-    <link rel="canonical" href="https://sfadriaan.github.io/how-to/omnistudio/omnistudio-get-dev-org/" />
+    <link rel="canonical" href="https://sfadriaan.github.io/reference/omnistudio/omnistudio-datatable-events/" />
     <link rel="index" title="Index" href="../../../genindex/" />
     <link rel="search" title="Search" href="../../../search/" />
-    <link rel="next" title="Check OmniStudio package version" href="../omnistudio-check-package-version/" />
-    <link rel="prev" title="Getting started" href="../omnistudio-getting-started/" /> 
+    <link rel="next" title="Explanation" href="../../../explanation/" />
+    <link rel="prev" title="Platform events" href="../omnistudio-platform-events/" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Aug 21, 2024"/> 
@@ -304,9 +304,8 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../omnistudio-index/">OmniStudio</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../omnistudio-getting-started/">Getting started</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Getting an OmniStudio enabled org</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../omnistudio-check-package-version/">Check OmniStudio package version</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../omnistudio-platform-events/">Platform events</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Datable events</a></li>
 </ul>
 </details></li>
 </ul>
@@ -351,15 +350,15 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../" class="nav-link">How-to guides</a></li>
+    <li class="breadcrumb-item"><a href="../../" class="nav-link">Reference</a></li>
     
     
     <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
     
     
-    <li class="breadcrumb-item"><a href="../omnistudio-getting-started/" class="nav-link">Getting started</a></li>
+    <li class="breadcrumb-item"><a href="../omnistudio-platform-events/" class="nav-link">Platform events</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Getting an...</li>
+    <li class="breadcrumb-item active" aria-current="page">Datable events</li>
   </ul>
 </nav>
 </div>
@@ -376,49 +375,71 @@ document.write(`
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                   <section id="getting-an-omnistudio-enabled-org">
-<h1>Getting an OmniStudio enabled org<a class="headerlink" href="#getting-an-omnistudio-enabled-org" title="Link to this heading">#</a></h1>
-<p>It’s important to ensure you have an up to date Omnistudio environment to develop in.
-Depending on your situation you:</p>
+                   <section id="datable-events">
+<h1>Datable events<a class="headerlink" href="#datable-events" title="Link to this heading">#</a></h1>
+<section id="short-description">
+<h2>Short description<a class="headerlink" href="#short-description" title="Link to this heading">#</a></h2>
+<p>What platform events are available when using the datatable component in a flexcard.</p>
+<p><a class="reference external" href="https://help.salesforce.com/s/articleView?id=sf.os_flexcards_datatable_properties_29884.htm&amp;type=5">Salesforce help files</a> mentions datatable events:</p>
 <ul class="simple">
-<li><p>have access to a sandbox that’s created from a production org that has Omnistudio installed,</p></li>
-<li><p>have the ability to create a scratch org that has Omnistudio enabled,</p></li>
-<li><p>not have access to a production org that has Omnistudio installed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">update</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">selectrow</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rowclick</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">delete</span></code></p></li>
 </ul>
-<p>There are multiple options where you can sign up for a free trial org that has Omnistudio installed:</p>
-<ol class="arabic simple">
-<li><dl class="simple">
-<dt><a class="reference external" href="https://developer.salesforce.com/free-trials/comparison/financial-services-cloud">Financial Services Cloud</a> <em>recommended</em></dt><dd><ul class="simple">
-<li><p>Always have an up to date Omnistudio installed at the time of sign up.</p></li>
-<li><dl class="simple">
-<dt>Two options are available</dt><dd><ul>
-<li><p>Base org</p></li>
-<li><p>Learning org</p></li>
+<p>as available when a user interacts with the datatable component in a flexcard.</p>
+<figure class="align-default">
+<img alt="../../../_images/omnistudio-datatable-event-examples.gif" src="../../../_images/omnistudio-datatable-event-examples.gif" />
+</figure>
+</section>
+<section id="long-description">
+<h2>Long description<a class="headerlink" href="#long-description" title="Link to this heading">#</a></h2>
+<section id="update-event">
+<h3><code class="docutils literal notranslate"><span class="pre">update</span></code> event<a class="headerlink" href="#update-event" title="Link to this heading">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">update</span></code> event fires when table data changes.</p>
+<p>A few things that it <strong>doesn’t</strong> do:</p>
+<ul class="simple">
+<li><p>the updated values aren’t exposed by the event,</p></li>
+<li><p>it doesn’t update the JSON node <code class="docutils literal notranslate"><span class="pre">{records}</span></code> with the newest data</p></li>
 </ul>
-</dd>
-</dl>
-</li>
+</section>
+<section id="selectrow-event">
+<h3><code class="docutils literal notranslate"><span class="pre">selectrow</span></code> event<a class="headerlink" href="#selectrow-event" title="Link to this heading">#</a></h3>
+<p>When selecting a row on the datatable, the <code class="docutils literal notranslate"><span class="pre">selectrow</span></code> event fires.
+Enable the “User Selectable Row” on the datatable component properties for a user to select a row that fires the <code class="docutils literal notranslate"><span class="pre">selectrow</span></code> event.</p>
+<figure class="align-default">
+<img alt="../../../_images/omnistudio-datatable-selectrow-event.gif" src="../../../_images/omnistudio-datatable-selectrow-event.gif" />
+</figure>
+<p>Some considerations that you need to take into account when using this event:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">{action.result.FIELD_NAME}</span></code> only contains the latest selected or de-selected row’s information.</p></li>
+<li><p>The Salesforce documentation says that the event fires when a row is “updated,” but that’s not the case; it only fires when selecting or de-selecting a row.</p></li>
+<li><p>When selecting the option to select all the rows, the datable event doesn’t return any data.</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://vlocitytrial-prod.herokuapp.com/?templateid=SFI_IPQ">Industries Training Playground</a></dt><dd><ul class="simple">
-<li><p>Has Vlocity Omnistudio installed.</p></li>
+</section>
+<section id="rowclick-event">
+<h3><code class="docutils literal notranslate"><span class="pre">rowclick</span></code> event<a class="headerlink" href="#rowclick-event" title="Link to this heading">#</a></h3>
+<p>When clicking on a datatable row, the <code class="docutils literal notranslate"><span class="pre">rowclick</span></code> event fires.
+The <code class="docutils literal notranslate"><span class="pre">rowclick</span></code> event contains the information of the record of the row on which the user clicked.</p>
+<figure class="align-default">
+<img alt="../../../_images/omnistudio-datatable-rowclick-event.gif" src="../../../_images/omnistudio-datatable-rowclick-event.gif" />
+</figure>
+<p>Some observations:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">{action.result.FIELD_NAME</span></code> contains the latest clicked on row’s information.</p></li>
+<li><p>You don’t need to click a cell’s information, it can be anywhere on the row.</p></li>
+<li><p>When you do cell level edits or row level edits, the click to edit fires the event.</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference external" href="https://trailhead.salesforce.com/promo/orgs/approval-process-for-public-sector-solutions">Approval Process for Public Sector Solutions Org</a></dt><dd><ul class="simple">
-<li><p>Outdated Omnistudio version installed</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ol>
-<p>These orgs are valid for 30 days.
-Sign up for another org when your trial period ends to continue your development.</p>
+</section>
+<section id="delete-event">
+<h3><code class="docutils literal notranslate"><span class="pre">delete</span></code> event<a class="headerlink" href="#delete-event" title="Link to this heading">#</a></h3>
+<p>When deleting a row, the <code class="docutils literal notranslate"><span class="pre">delete</span></code> event fires.
+Make sure to enable the <code class="docutils literal notranslate"><span class="pre">Row</span> <span class="pre">Delete</span></code> attribute of the datatable component to ensure the user has the option to delete a row in the datatable.</p>
+<figure class="align-default">
+<img alt="../../../_images/omnistudio-datatable-delete-event.gif" src="../../../_images/omnistudio-datatable-delete-event.gif" />
+</figure>
+</section>
+</section>
 </section>
 
 <div class="section ablog__blog_comments">
@@ -456,9 +477,28 @@ Sign up for another org when your trial period ends to continue your development
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#short-description">Short description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#long-description">Long description</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-event"><code class="docutils literal notranslate"><span class="pre">update</span></code> event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selectrow-event"><code class="docutils literal notranslate"><span class="pre">selectrow</span></code> event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rowclick-event"><code class="docutils literal notranslate"><span class="pre">rowclick</span></code> event</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delete-event"><code class="docutils literal notranslate"><span class="pre">delete</span></code> event</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../../_sources/how-to/omnistudio/omnistudio-get-dev-org.rst.txt">
+    <a href="../../../_sources/reference/omnistudio/omnistudio-datatable-events.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
