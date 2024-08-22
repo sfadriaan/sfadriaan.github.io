@@ -19,3 +19,23 @@ In the event that you have a trail org that has an outdated version, or your pro
     f. After the updates/installation has completed, verify that the Installed Package version is correct.
 
     .. figure:: /images/omnistudio-latest-package-version.png
+
+.. raw:: html
+
+    <embed>
+        <script src="https://giscus.app/client.js"
+            data-repo="sfadriaan/sfadriaan.github.io"
+            data-repo-id="R_kgDOMjpG6Q"
+            data-category="General"
+            data-category-id="DIC_kwDOMjpG6c4Chwzv"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </embed>

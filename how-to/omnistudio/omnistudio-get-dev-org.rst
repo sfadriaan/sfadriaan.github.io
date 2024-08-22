@@ -22,3 +22,25 @@ There are multiple options where you can sign up for a free trial org that has O
 
 These orgs are valid for 30 days.
 Sign up for another org when your trial period ends to continue your development. 
+
+.. raw:: html
+
+    <embed>
+        <script src="https://giscus.app/client.js"
+            data-repo="sfadriaan/sfadriaan.github.io"
+            data-repo-id="R_kgDOMjpG6Q"
+            data-category="General"
+            data-category-id="DIC_kwDOMjpG6c4Chwzv"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </embed>
+
+
