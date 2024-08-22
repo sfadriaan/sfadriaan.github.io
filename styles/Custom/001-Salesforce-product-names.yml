@@ -1,0 +1,12 @@
+extends: substitution
+message: "Use '%s' instead of '%s'"
+ignorecase: true
+level: suggestion
+action:
+  name: replace
+swap:
+  omnistudio : 'OmniStudio'
+  dataraptor : 'DataRaptor'
+  flexcard : 'Flexcard'
+
+  
