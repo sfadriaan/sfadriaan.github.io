@@ -65,3 +65,23 @@ When deleting a row, the ``delete`` event fires.
 Make sure to enable the ``Row Delete`` attribute of the datatable component to ensure the user has the option to delete a row in the datatable.
 
 .. figure:: /images/omnistudio-datatable-delete-event.gif
+
+.. raw:: html
+
+    <embed>
+        <script src="https://giscus.app/client.js"
+            data-repo="sfadriaan/sfadriaan.github.io"
+            data-repo-id="R_kgDOMjpG6Q"
+            data-category="General"
+            data-category-id="DIC_kwDOMjpG6c4Chwzv"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </embed>
