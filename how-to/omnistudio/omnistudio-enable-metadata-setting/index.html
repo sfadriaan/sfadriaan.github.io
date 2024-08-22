@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Reference" />
+<meta property="og:title" content="Enable Metadata setting in OmniStudio" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sfadriaan.github.io/reference/" />
+<meta property="og:url" content="https://sfadriaan.github.io/how-to/omnistudio/omnistudio-enable-metadata-setting/" />
 <meta property="og:site_name" content="Salesforce Adriaan" />
-<meta property="og:description" content="OmniStudio." />
+<meta property="og:description" content="To be able to deploy and retrieve OmniStudio components using the Metadata API, enable the OmniStudio Metadata Setting. Navigate to Setup, Select OmniStudio Settings, Enable OmniStudio Metadata. Th..." />
 <meta property="og:image" content="https://sfadriaan.github.io/_static/opengraph.png" />
 <meta property="og:image:alt" content="" />
-<meta name="description" content="OmniStudio." />
+<meta name="description" content="To be able to deploy and retrieve OmniStudio components using the Metadata API, enable the OmniStudio Metadata Setting. Navigate to Setup, Select OmniStudio Settings, Enable OmniStudio Metadata. Th..." />
 
-    <title>Reference &#8212; Salesforce Adriaan</title>
+    <title>Enable Metadata setting in OmniStudio &#8212; Salesforce Adriaan</title>
   
   
   
@@ -26,46 +26,46 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/rubyhammerhead.css?v=1cf6dd3f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/rubyhammerhead.css?v=1cf6dd3f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=187304be"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/index';</script>
-    <script src="../_static/js/rubyhammerhead.js?v=c337c661"></script>
-    <link rel="canonical" href="https://sfadriaan.github.io/reference/" />
-    <link rel="index" title="Index" href="../genindex/" />
-    <link rel="search" title="Search" href="../search/" />
-    <link rel="next" title="OmniStudio" href="omnistudio/omnistudio-index/" />
-    <link rel="prev" title="Enable Metadata setting in OmniStudio" href="../how-to/omnistudio/omnistudio-enable-metadata-setting/" /> 
+    <script src="../../../_static/documentation_options.js?v=187304be"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/omnistudio/omnistudio-enable-metadata-setting';</script>
+    <script src="../../../_static/js/rubyhammerhead.js?v=c337c661"></script>
+    <link rel="canonical" href="https://sfadriaan.github.io/how-to/omnistudio/omnistudio-enable-metadata-setting/" />
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Reference" href="../../../reference/" />
+    <link rel="prev" title="Check OmniStudio package version" href="../omnistudio-check-package-version/" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Aug 22, 2024"/> 
 <link
   rel="alternate"
   type="application/atom+xml"
-  href="../posts/atom.xml"
+  href="../../../posts/atom.xml"
   title="Salesforce Adriaan"
 />
   
@@ -98,7 +98,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search/"
+      action="../../../search/"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -135,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="../">
+<a class="navbar-brand logo" href="../../../">
   
   
   
@@ -302,10 +302,12 @@ document.write(`
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="omnistudio/omnistudio-index/">OmniStudio</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="omnistudio/omnistudio-platform-events/">Platform events</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="omnistudio/omnistudio-datatable-events/">Datable events</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../omnistudio-index/">OmniStudio</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../omnistudio-getting-started/">Getting started</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../omnistudio-get-dev-org/">Getting an OmniStudio enabled org</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../omnistudio-check-package-version/">Check OmniStudio package version</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Enable Metadata setting in OmniStudio</a></li>
 </ul>
 </details></li>
 </ul>
@@ -339,15 +341,26 @@ document.write(`
 
 
 
+
+
 <nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../" class="nav-link" aria-label="Home">
+      <a href="../../../" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Reference</li>
+    
+    <li class="breadcrumb-item"><a href="../../" class="nav-link">How-to guides</a></li>
+    
+    
+    <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../omnistudio-getting-started/" class="nav-link">Getting started</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Enable...</li>
   </ul>
 </nav>
 </div>
@@ -363,14 +376,49 @@ document.write(`
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                   <section id="reference">
-<h1>Reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="omnistudio/omnistudio-index/">OmniStudio</a></li>
-</ul>
+                   <section id="enable-metadata-setting-in-omnistudio">
+<h1>Enable Metadata setting in OmniStudio<a class="headerlink" href="#enable-metadata-setting-in-omnistudio" title="Link to this heading">#</a></h1>
+<p>To be able to deploy and retrieve OmniStudio components using the Metadata API, enable the OmniStudio Metadata Setting.</p>
+<ol class="arabic simple">
+<li><p>Navigate to Setup</p></li>
+<li><p>Select OmniStudio Settings</p></li>
+<li><p>Enable OmniStudio Metadata</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Once you enable the OmniStudio Metadata setting, you can’t turn it off.</p>
 </div>
-</section>
+<p>The process of enabling the setting checks all the OmniStudio component unique names for violations.
+If Salesforce finds any violations, it sends an email listing all the components that doesn’t conform to the requirement.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Your data migration for organization ID ORD_ID failed.</div>
+</div>
+<div class="line-block">
+<div class="line">Fix your data and enable OmniStudioMetadata again.</div>
+<div class="line">These records had errors:</div>
+<div class="line">RECORD_ID_1 - Field must be alphanumeric and contain no spaces or underscores.</div>
+<div class="line">RECORD_ID_2 - Field must be alphanumeric and contain no spaces or underscores.</div>
+</div>
+</div></blockquote>
+<p>In the event of a trail org, these violations can be safely deleted as they’re sample components most of the times.</p>
+<embed>
+    <script src="https://giscus.app/client.js"
+        data-repo="sfadriaan/sfadriaan.github.io"
+        data-repo-id="R_kgDOMjpG6Q"
+        data-category="General"
+        data-category-id="DIC_kwDOMjpG6c4Chwzv"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+</embed></section>
 
 <div class="section ablog__blog_comments">
    
@@ -392,7 +440,7 @@ document.write(`
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../_sources/reference/index.rst.txt">
+    <a href="../../../_sources/how-to/omnistudio/omnistudio-enable-metadata-setting.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
@@ -411,8 +459,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

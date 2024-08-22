@@ -1,14 +1,14 @@
 Getting an OmniStudio enabled org
 =================================
 
-It's important to ensure you have an up to date Omnistudio environment to develop in.
+It's important to ensure you have an up to date OmniStudio environment to develop in.
 Depending on your situation you:
 
 * have access to a sandbox that's created from a production org that has Omnistudio installed,
 * have the ability to create a scratch org that has Omnistudio enabled,
 * not have access to a production org that has Omnistudio installed.
 
-There are multiple options where you can sign up for a free trial org that has Omnistudio installed:
+There are multiple options where you can sign up for a free trial org that has OmniStudio installed:
 
 1. `Financial Services Cloud <https://developer.salesforce.com/free-trials/comparison/financial-services-cloud>`_ *recommended*
     * Always have an up to date Omnistudio installed at the time of sign up.
