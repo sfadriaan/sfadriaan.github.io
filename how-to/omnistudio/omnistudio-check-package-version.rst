@@ -2,7 +2,7 @@ Check OmniStudio package version
 ================================
 
 Salesforce releases updates to the OmniStudio Managed Package during every release cycle i.e. Spring, Summer, and Winter.
-Updates to the Omnistudio Managed Package should happen automatically in your production org.
+Updates to the OmniStudio Managed Package should happen automatically in your production org.
 
 In the event that you have a trail org that has an outdated version, or your production org hasn't updated automatically, you can manually update the managed package.
 

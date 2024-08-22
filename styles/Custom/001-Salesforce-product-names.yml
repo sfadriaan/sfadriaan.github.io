@@ -4,6 +4,8 @@ ignorecase: true
 level: suggestion
 action:
   name: replace
+scope:
+  - sentence
 swap:
   omnistudio : 'OmniStudio'
   dataraptor : 'DataRaptor'

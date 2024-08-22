@@ -4,7 +4,7 @@ Datable events
 Short description
 -----------------
 
-What platform events are available when using the datatable component in a flexcard.
+What platform events are available when using the datatable component in a Flexcard.
 
 `Salesforce help files <https://help.salesforce.com/s/articleView?id=sf.os_flexcards_datatable_properties_29884.htm&type=5>`_ mentions datatable events:
 
@@ -13,7 +13,7 @@ What platform events are available when using the datatable component in a flexc
 * ``rowclick``
 * ``delete``
 
-as available when a user interacts with the datatable component in a flexcard.
+as available when a user interacts with the datatable component in a Flexcard.
 
 .. figure:: /images/omnistudio-datatable-event-examples.gif
 
