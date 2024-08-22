@@ -6,4 +6,5 @@ Getting started
 
    omnistudio-get-dev-org
    omnistudio-check-package-version
+   omnistudio-enable-metadata-setting
 
