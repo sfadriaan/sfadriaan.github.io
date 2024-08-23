@@ -1,6 +1,6 @@
 .idea
 .DS_Store
-_website
+_build
 .doctrees
 .venv
 __pycache__
