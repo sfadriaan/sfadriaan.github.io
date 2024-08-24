@@ -49,3 +49,22 @@ Configure the action that closes the flyout:
 
 .. figure:: /images/omnistudio-close-flyout-event-listener.png
 
+.. raw:: html
+
+    <embed>
+        <script src="https://giscus.app/client.js"
+            data-repo="sfadriaan/sfadriaan.github.io"
+            data-repo-id="R_kgDOMjpG6Q"
+            data-category="General"
+            data-category-id="DIC_kwDOMjpG6c4Chwzv"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+        </script>
+    </embed>
