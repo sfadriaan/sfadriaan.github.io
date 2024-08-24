@@ -10,3 +10,4 @@ Get your development environment set up with the latest version of OmniStudio.
    :maxdepth: 2
 
    omnistudio-getting-started
+   omnistudio-user-experience
