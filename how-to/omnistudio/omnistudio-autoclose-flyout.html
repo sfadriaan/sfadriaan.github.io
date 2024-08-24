@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="User experience" href="omnistudio-user-experience.html" /><link rel="prev" title="Check OmniStudio package version" href="omnistudio-check-package-version.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Reference" href="../../reference/index.html" /><link rel="prev" title="User experience" href="omnistudio-user-experience.html" />
 
     <!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
-        <title>Enable Metadata setting in OmniStudio - Salesforce Adriaan</title>
+        <title>Auto-close flyout - Salesforce Adriaan</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
@@ -206,14 +206,14 @@
 </li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">How-to guides</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of How-to guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current has-children"><a class="reference internal" href="omnistudio-index.html">OmniStudio</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of OmniStudio</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current has-children"><a class="reference internal" href="omnistudio-getting-started.html">Getting started</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Getting started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="omnistudio-getting-started.html">Getting started</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Getting started</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="omnistudio-get-dev-org.html">Getting an OmniStudio enabled org</a></li>
 <li class="toctree-l4"><a class="reference internal" href="omnistudio-check-package-version.html">Check OmniStudio package version</a></li>
-<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Enable Metadata setting in OmniStudio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="omnistudio-enable-metadata-setting.html">Enable Metadata setting in OmniStudio</a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="omnistudio-user-experience.html">User experience</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of User experience</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="omnistudio-autoclose-flyout.html">Auto-close flyout</a></li>
+<li class="toctree-l3 current has-children"><a class="reference internal" href="omnistudio-user-experience.html">User experience</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of User experience</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current current-page"><a class="current reference internal" href="#">Auto-close flyout</a></li>
 </ul>
 </li>
 </ul>
@@ -253,7 +253,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/how-to/omnistudio/omnistudio-enable-metadata-setting.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/how-to/omnistudio/omnistudio-autoclose-flyout.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -273,32 +273,55 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="enable-metadata-setting-in-omnistudio">
-<h1>Enable Metadata setting in OmniStudio<a class="headerlink" href="#enable-metadata-setting-in-omnistudio" title="Link to this heading">¶</a></h1>
-<p>To be able to deploy and retrieve OmniStudio components using the Metadata API, enable the OmniStudio Metadata Setting.</p>
-<ol class="arabic simple">
-<li><p>Navigate to Setup</p></li>
-<li><p>Select OmniStudio Settings</p></li>
-<li><p>Enable OmniStudio Metadata</p></li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Once you enable the OmniStudio Metadata setting, you can’t turn it off.</p>
+          <section id="auto-close-flyout">
+<h1>Auto-close flyout<a class="headerlink" href="#auto-close-flyout" title="Link to this heading">¶</a></h1>
+<p>See Salesforce <a class="reference external" href="https://help.salesforce.com/s/articleView?id=sf.os_fire_an_event_to_automatically_close_a_flyout_modal_27434.htm&amp;type=5">help file</a> with regards to this topic.</p>
+<p>The default way to close a flyout launched from a Flexcard, is to press the close button on the right top of the flyout once done.</p>
+<p>The Flexcard can automatically close the flyout with a Pub/Sub event sent from the flyout when it needs to close.
+When configuring the flyout, take note of the <code class="docutils literal notranslate"><span class="pre">Channel</span> <span class="pre">Name</span></code>:</p>
+<figure class="align-default">
+<img alt="../../_images/omnistudio-flyout-channel-name.png" src="../../_images/omnistudio-flyout-channel-name.png" />
+</figure>
+<p>You can keep the default name of <code class="docutils literal notranslate"><span class="pre">close_modal</span></code>.</p>
+<p>You can close the flyout when the user clicks the last time on the <code class="docutils literal notranslate"><span class="pre">Next</span></code> button on a Step element in an OmniScript flyout.
+The last <code class="docutils literal notranslate"><span class="pre">Next</span></code> button label can change to something more descriptive such as <code class="docutils literal notranslate"><span class="pre">Save</span></code>/<code class="docutils literal notranslate"><span class="pre">Close</span></code>/<code class="docutils literal notranslate"><span class="pre">Finish</span></code> etc.</p>
+<p>To ensure there is a <code class="docutils literal notranslate"><span class="pre">Next</span></code> button on the last Step element in the Omniscript, some other element needs to follow the last Step element.
+A DataRaptor or Integration Procedure usually follows the last Step that processes the data, but if in your scenario there is none, you can add a Set Values element.</p>
+<div class="tab-set docutils container">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Step element last</label><div class="tab-content docutils container">
+<figure class="align-default">
+<img alt="../../_images/omnistudio-step-element-last.png" src="../../_images/omnistudio-step-element-last.png" />
+</figure>
 </div>
-<p>The process of enabling the setting checks all the OmniStudio component unique names for violations.
-If Salesforce finds any violations, it sends an email listing all the components that doesn’t conform to the requirement.</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">Your data migration for organization ID ORD_ID failed.</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Step element not last</label><div class="tab-content docutils container">
+<figure class="align-default">
+<img alt="../../_images/omnistudio-step-element-not-last.png" src="../../_images/omnistudio-step-element-not-last.png" />
+</figure>
 </div>
-<div class="line-block">
-<div class="line">Fix your data and enable OmniStudioMetadata again.</div>
-<div class="line">These records had errors:</div>
-<div class="line">RECORD_ID_1 - Field must be alphanumeric and contain no spaces or underscores.</div>
-<div class="line">RECORD_ID_2 - Field must be alphanumeric and contain no spaces or underscores.</div>
 </div>
-</div></blockquote>
-<p>In the event of a trail org, these violations can be safely deleted as they’re sample components most of the times.</p>
+<p>On the last element in the Omniscript flyout, enable <code class="docutils literal notranslate"><span class="pre">Pub/Sub</span></code> inside the Messaging Framework section.
+Leave the Message Key/Value pair empty.</p>
+<figure class="align-default">
+<img alt="../../_images/omnistudio-enable-pubsub-on-element.png" src="../../_images/omnistudio-enable-pubsub-on-element.png" />
+</figure>
+<p>Next, add an event listener to the Flexcard that launched the flyout:</p>
+<p>Set the following:</p>
+<ul class="simple">
+<li><p><strong>Event Type</strong>: <code class="docutils literal notranslate"><span class="pre">Pubsub</span></code></p></li>
+<li><p><strong>Channel Name</strong>: <code class="docutils literal notranslate"><span class="pre">omniscript_action</span></code></p></li>
+<li><p><strong>Event Name</strong>: <code class="docutils literal notranslate"><span class="pre">data</span></code></p></li>
+</ul>
+<p>This ensures the event listener picks up the Pub/Sub triggered by the last element in the Omniscript flyout
+Configure the action that closes the flyout:</p>
+<ul class="simple">
+<li><p><strong>Action Type</strong>: <code class="docutils literal notranslate"><span class="pre">Event</span></code></p></li>
+<li><p><strong>Event Type</strong>: <code class="docutils literal notranslate"><span class="pre">PubSub</span></code></p></li>
+<li><p><strong>Channel Name</strong>: <code class="docutils literal notranslate"><span class="pre">close_modal</span></code></p></li>
+<li><p><strong>Event Name</strong>: <code class="docutils literal notranslate"><span class="pre">close</span></code></p></li>
+</ul>
+<figure class="align-default">
+<img alt="../../_images/omnistudio-close-flyout-event-listener.png" src="../../_images/omnistudio-close-flyout-event-listener.png" />
+</figure>
 <embed>
     <script src="https://giscus.app/client.js"
         data-repo="sfadriaan/sfadriaan.github.io"
@@ -337,7 +360,7 @@ If Salesforce finds any violations, it sends an email listing all the components
 
     
     <div class="show-source">
-      <a class="muted-link" href="../../_sources/how-to/omnistudio/omnistudio-enable-metadata-setting.rst.txt"
+      <a class="muted-link" href="../../_sources/how-to/omnistudio/omnistudio-autoclose-flyout.rst.txt"
          rel="nofollow">Show source</a>
     </div>
   </div>
@@ -351,12 +374,12 @@ If Salesforce finds any violations, it sends an email listing all the components
 
     
     <div class="issue-github">
-      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/issues/new?title=doc%3A+ADD+A+TITLE&body=DESCRIBE+THE+ISSUE%0A%0A---%0ADocument: how-to/omnistudio/omnistudio-enable-metadata-setting.rst">Open a GitHub issue for this page</a>
+      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/issues/new?title=doc%3A+ADD+A+TITLE&body=DESCRIBE+THE+ISSUE%0A%0A---%0ADocument: how-to/omnistudio/omnistudio-autoclose-flyout.rst">Open a GitHub issue for this page</a>
     </div>
     
 
     <div class="edit-github">
-      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/edit/master/how-to/omnistudio/omnistudio-enable-metadata-setting.rst">Edit this page on GitHub</a>
+      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/edit/master/how-to/omnistudio/omnistudio-autoclose-flyout.rst">Edit this page on GitHub</a>
     </div>
     
 
@@ -379,7 +402,7 @@ If Salesforce finds any violations, it sends an email listing all the components
     <div class="toc-tree-container">
       <div class="toc-tree">
         <ul>
-<li><a class="reference internal" href="#">Enable Metadata setting in OmniStudio</a></li>
+<li><a class="reference internal" href="#">Auto-close flyout</a></li>
 </ul>
 
       </div>
