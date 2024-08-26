@@ -9,3 +9,4 @@ The How-To section consists of different subsections to help you better navigate
    :maxdepth: 1
 
    omnistudio/omnistudio-index
+   core/core-index
