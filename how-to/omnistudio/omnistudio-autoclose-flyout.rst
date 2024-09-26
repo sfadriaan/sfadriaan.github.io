@@ -1,7 +1,7 @@
 Auto-close flyout
 =================
 
-See Salesforce `help file <https://help.salesforce.com/s/articleView?id=sf.os_fire_an_event_to_automatically_close_a_flyout_modal_27434.htm&type=5>`_ with regards to this topic.
+See Salesforce `help file <https://help.salesforce.com/s/articleView?id=sf.os_fire_an_event_to_automatically_close_a_flyout_modal.htm&type=5>`_ with regards to this topic.
 
 The default way to close a flyout launched from a Flexcard, is to press the close button on the right top of the flyout once done.
 

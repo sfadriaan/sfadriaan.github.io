@@ -6,7 +6,7 @@ Short description
 
 What platform events are available when using the datatable component in a Flexcard.
 
-`Salesforce help files <https://help.salesforce.com/s/articleView?id=sf.os_flexcards_datatable_properties_29884.htm&type=5>`_ mentions datatable events:
+`Salesforce help files <https://help.salesforce.com/s/articleView?id=sf.os_flexcards_datatable_properties.htm&type=5>`_ mentions datatable events:
 
 * ``update``
 * ``selectrow``
