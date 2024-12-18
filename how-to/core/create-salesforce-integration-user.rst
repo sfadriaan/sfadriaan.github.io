@@ -35,8 +35,8 @@ Take the following steps to assign/change a default record type for a given obje
 * Disable “Enhanced Profile User Interface” setting by going to Setup -> User Management Settings.
 * Select the “Minimum Access - API Only Integrations” profile and change/add the default record type for the relevant object.
 
-Email templates
-'''''''''''''''
+Classic email templates
+'''''''''''''''''''''''
 
 The `Salesforce documentation <https://help.salesforce.com/s/articleView?id=sf.email_templates_perms.htm&type=5>`_ specifies how to grant access to email templates and email template folders via the Permission Set user interface. 
 
