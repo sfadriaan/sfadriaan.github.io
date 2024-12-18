@@ -6,3 +6,4 @@ Salesforce core
 
    how-to-get-record-id-record-triggered-flow
    add-attachment-to-classic-email-template
+   create-salesforce-integration-user
