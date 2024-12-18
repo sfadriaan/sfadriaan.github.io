@@ -14,6 +14,11 @@ jobs:
     steps:
         - name: Checkout repo to runner
           uses: actions/checkout@v4
+          
+        # For reStructuredText users:
+        - name: Install docutils
+          run: sudo apt-get install -y docutils
+
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:
