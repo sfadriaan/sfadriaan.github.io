@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="How to create an integration user in Salesforce" href="create-salesforce-integration-user.html" /><link rel="prev" title="How to get recordId in record triggered flow" href="how-to-get-record-id-record-triggered-flow.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Reference" href="../../reference/index.html" /><link rel="prev" title="Add attachment to classic email template" href="add-attachment-to-classic-email-template.html" />
 
     <!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
-        <title>Add attachment to classic email template - Salesforce Adriaan</title>
+        <title>How to create an integration user in Salesforce - Salesforce Adriaan</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css?v=4c969af8" />
@@ -180,7 +180,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -220,8 +220,8 @@
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="core-index.html">Salesforce core</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of Salesforce core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="how-to-get-record-id-record-triggered-flow.html">How to get <code class="docutils literal notranslate"><span class="pre">recordId</span></code> in record triggered flow</a></li>
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Add attachment to classic email template</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create-salesforce-integration-user.html">How to create an integration user in Salesforce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add-attachment-to-classic-email-template.html">Add attachment to classic email template</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">How to create an integration user in Salesforce</a></li>
 </ul>
 </li>
 </ul>
@@ -256,7 +256,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../../_sources/how-to/core/add-attachment-to-classic-email-template.rst.txt" title="View this page">
+  <a class="muted-link" href="../../_sources/how-to/core/create-salesforce-integration-user.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -270,19 +270,74 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="add-attachment-to-classic-email-template">
-<h1>Add attachment to classic email template<a class="headerlink" href="#add-attachment-to-classic-email-template" title="Link to this heading">¶</a></h1>
-<p>If the attachment is static for all scenarios when using the email template,
-then you can add it to the email template beforehand:</p>
-<figure class="align-default">
-<img alt="../../_images/add-attachment-to-email-template.png" src="../../_images/add-attachment-to-email-template.png" />
-</figure>
+          <section id="how-to-create-an-integration-user-in-salesforce">
+<h1>How to create an integration user in Salesforce<a class="headerlink" href="#how-to-create-an-integration-user-in-salesforce" title="Link to this heading">¶</a></h1>
+<p>Salesforce introduced the Salesforce Integration User License with the <a class="reference external" href="https://help.salesforce.com/s/articleView?id=release-notes.rn_api_integration_license.htm&amp;release=242&amp;type=5">Spring ‘23 release</a>.
+Depending on your Salesforce Instance, you get one or more licenses for free.</p>
+<section id="set-up-procedure">
+<h2>Set up procedure<a class="headerlink" href="#set-up-procedure" title="Link to this heading">¶</a></h2>
+<p>Select the following options when creating a new Integration User:</p>
+<ul class="simple">
+<li><p><strong>User License</strong>: Salesforce Integration</p></li>
+<li><p><strong>Profile</strong>: Minimum Access - API Only Integrations</p></li>
+</ul>
+<p>Next, assign the relevant permission sets to the user:</p>
+<ul class="simple">
+<li><p>Under “Permission Set License Assignments” assign the “Salesforce API Integration” Permission Set License.</p></li>
+<li><p>Create a custom Permission Set for the integration user giving it the necessary permissions as per your use case.</p></li>
+</ul>
+<p>Add all permissions required by the external system to the newly created custom Permission Set.</p>
+</section>
+<section id="other-considerations">
+<h2>Other considerations<a class="headerlink" href="#other-considerations" title="Link to this heading">¶</a></h2>
+<p>Follow the below steps to enable the following permissions:</p>
+<section id="record-types">
+<h3>Record types<a class="headerlink" href="#record-types" title="Link to this heading">¶</a></h3>
+<p>The user’s default record types are on the Profile level.
+Assign additional record types via the custom Permission Set.</p>
+<p>Take the following steps to assign/change a default record type for a given object:</p>
+<ul class="simple">
+<li><p>Disable “Enhanced Profile User Interface” setting by going to Setup -&gt; User Management Settings.</p></li>
+<li><p>Select the “Minimum Access - API Only Integrations” profile and change/add the default record type for the relevant object.</p></li>
+</ul>
+</section>
+<section id="classic-email-templates">
+<h3>Classic email templates<a class="headerlink" href="#classic-email-templates" title="Link to this heading">¶</a></h3>
+<p>The <a class="reference external" href="https://help.salesforce.com/s/articleView?id=sf.email_templates_perms.htm&amp;type=5">Salesforce documentation</a> specifies how to grant access to email templates and email template folders via the Permission Set user interface.</p>
+<p>Even with the necessary permissions provided, the API user doesn’t have access to the relevant email templates.
+It’s necessary to add additional permissions programmatically by updating the metadata of the custom Permission Set.</p>
+<p>Take the following steps:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Retrieve the metadata of the relevant custom Permission Set</dt><dd><ol class="loweralpha simple">
+<li><p>Do this either via <a class="reference external" href="https://workbench.developerforce.com/login.php">Workbench</a> or the <a class="reference external" href="https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_top.htm">SF command-line tool</a>.</p></li>
+<li><p>Example SF command-line tool command for retrieving Permission Set metadata:</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sf<span class="w"> </span>project<span class="w"> </span>retrieve<span class="w"> </span>start<span class="w"> </span>--metadata<span class="w"> </span>PermissionSet:NAME_OF_PERMISSION_SET<span class="w"> </span>-o<span class="w"> </span>ORG_ALIAS
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Add the following system permission:</p></li>
+</ol>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;userPermissions&gt;</span>
+<span class="w">  </span><span class="nt">&lt;enabled&gt;</span>true<span class="nt">&lt;/enabled&gt;</span>
+<span class="w">  </span><span class="nt">&lt;name&gt;</span>EmailTemplateManagement<span class="nt">&lt;/name&gt;</span>
+<span class="nt">&lt;/userPermissions&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Deploy the updated metadata to the relevant Salesforce org.</p></li>
+</ol>
 <embed>
     <script src="https://giscus.app/client.js"
         data-repo="sfadriaan/sfadriaan.github.io"
@@ -300,6 +355,8 @@ then you can add it to the email template beforehand:</p>
         async>
     </script>
 </embed></section>
+</section>
+</section>
 
         </article>
       </div>
@@ -321,7 +378,7 @@ then you can add it to the email template beforehand:</p>
 
     
     <div class="show-source">
-      <a class="muted-link" href="../../_sources/how-to/core/add-attachment-to-classic-email-template.rst.txt"
+      <a class="muted-link" href="../../_sources/how-to/core/create-salesforce-integration-user.rst.txt"
          rel="nofollow">Show source</a>
     </div>
   </div>
@@ -335,12 +392,12 @@ then you can add it to the email template beforehand:</p>
 
     
     <div class="issue-github">
-      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/issues/new?title=doc%3A+ADD+A+TITLE&body=DESCRIBE+THE+ISSUE%0A%0A---%0ADocument: how-to/core/add-attachment-to-classic-email-template.rst">Open a GitHub issue for this page</a>
+      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/issues/new?title=doc%3A+ADD+A+TITLE&body=DESCRIBE+THE+ISSUE%0A%0A---%0ADocument: how-to/core/create-salesforce-integration-user.rst">Open a GitHub issue for this page</a>
     </div>
     
 
     <div class="edit-github">
-      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/edit/master/how-to/core/add-attachment-to-classic-email-template.rst">Edit this page on GitHub</a>
+      <a class="muted-link" href="https://github.com/sfadriaan/sfadriaan.github.io/edit/master/how-to/core/create-salesforce-integration-user.rst">Edit this page on GitHub</a>
     </div>
     
 
@@ -351,7 +408,7 @@ then you can add it to the email template beforehand:</p>
 
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
 <div class="toc-sticky toc-scroll">
    
@@ -363,7 +420,15 @@ then you can add it to the email template beforehand:</p>
     <div class="toc-tree-container">
       <div class="toc-tree">
         <ul>
-<li><a class="reference internal" href="#">Add attachment to classic email template</a></li>
+<li><a class="reference internal" href="#">How to create an integration user in Salesforce</a><ul>
+<li><a class="reference internal" href="#set-up-procedure">Set up procedure</a></li>
+<li><a class="reference internal" href="#other-considerations">Other considerations</a><ul>
+<li><a class="reference internal" href="#record-types">Record types</a></li>
+<li><a class="reference internal" href="#classic-email-templates">Classic email templates</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
       </div>
